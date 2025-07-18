@@ -81,7 +81,31 @@ body {
   max-height: calc(100vh - 70px);
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  /* إزالة أي ارتفاع ثابت */
+  .about-section {
+    padding-top: 100px; 
+    padding-bottom: 120px; 
+  }
 
+  .about-section .row {
+    height: auto !important;
+    flex-direction: column;
+  }
+
+  .about-section .col-lg-6 {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .about-section img {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
 /*index*/
 .hero-section {
   background-color: #e9ecef;
